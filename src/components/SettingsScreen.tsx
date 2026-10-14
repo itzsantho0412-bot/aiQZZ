@@ -59,7 +59,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
   onSimulateIncomingCall,
   micPermissionState = 'prompt',
   callPermissionState = 'prompt',
-}) => {
+})=>{
   const [selectedLanguage, setSelectedLanguage] = useState('Tamil + English');
   const [darkMode, setDarkMode] = useState(true);
   const [notifications, setNotifications] = useState(true);
