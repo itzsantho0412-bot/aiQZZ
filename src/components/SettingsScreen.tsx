@@ -1013,4 +1013,3 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
     </div>
     }
   }
-)
