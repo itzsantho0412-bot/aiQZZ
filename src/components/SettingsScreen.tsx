@@ -994,7 +994,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
                 <p className="text-[10px] text-zinc-400">Ringtone & celestial accountability</p>
               </div>
             </div>
-            <button
+            <button>
               onClick={() => {
                 if (callPermissionState !== 'granted' && onRequestCallPermission) {
                   onRequestCallPermission();
