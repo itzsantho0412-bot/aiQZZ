@@ -996,6 +996,20 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
                 <p className="text-[10px] text-zinc-400">Ringtone & celestial accountability</p>
               </div>
             </div>
+            <button
+              onClick={() => {
+                if (callPermissionState !== 'granted' && onRequestCallPermission) {
+                  onRequestCallPermission();
+                } else if (onSimulateIncomingCall) {
+                  onSimulateIncomingCall('Morning');
+                }
+              }}
+              className="px-3 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-orange-500 to-amber-500 text-black hover:from-orange-400 hover:to-amber-400 active:scale-95 transition-all"
+            >
+              Test Call 🔔
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   };
