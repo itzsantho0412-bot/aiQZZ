@@ -221,7 +221,8 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
     return `${m}:${String(s).padStart(2, '0')}`;
   };
 
-  return (
+  return 
+    {
     <div className="pb-28 px-4 pt-4 space-y-5 text-white">
       {/* Header */}
       <div>
@@ -1010,5 +1011,5 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
         </div>
       </div>
     </div>
+    }
   }
-            }
